@@ -1,0 +1,18 @@
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+
+[alias]
+        ci = commit
+        co = checkout
+        st = status
+        br = branch
+        df = diff
+        last = log -1 HEAD
+        stat = log --stat
+        unstage = reset HEAD --
+        discard = checkout --
+
+[core]
+        pager = 'most'
