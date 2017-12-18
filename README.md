@@ -23,3 +23,24 @@ docker build -t myubuntu .
 ```bash
 docker run -it xgaia/myubuntu
 ```
+
+### Environment
+
+The image contains:
+
+- Shell
+    - zsh (with its `.zshrc`)
+
+- Utilities
+    - htop
+    - ncdu
+    - wget and curl
+    - git (with its `.gitconfig`)
+    - zip/unzip
+    - vim and most
+
+- Programming
+    - Python 2.7 and Python 3 (+ pip3, ipython3, venv *etc..*)
+    - Java and Scala (openjdk8)
+    - nodejs and npm
+    - gcc, g++, make and cmake
