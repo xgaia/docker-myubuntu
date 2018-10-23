@@ -1,4 +1,4 @@
-from ubuntu:16.04
+from ubuntu:18.04
 MAINTAINER Xavier Garnier 'xavier.garnier@irisa.fr'
 
 # Copy dotfiles and startup script
@@ -9,9 +9,8 @@ COPY startup.sh /start.sh
 # Install packages, and change the default shell to zsh, and run a startup script if it exist
 RUN apt update && \
     apt upgrade -y && \
-    apt install -y wget zsh curl htop vim git zip ncdu man cmake most python3 python3-venv python3-pip ipython3 openjdk-8-jdk scala nodejs npm && \
+    apt install -y wget zsh curl htop vim git zip ncdu man cmake most python3 python3-venv python3-pip python3-dev ipython3 openjdk-8-jdk scala nodejs npm && \
     echo $(which zsh) | chsh && \
-    ln -s /usr/bin/nodejs /usr/bin/node && \
     chmod +x /start.sh
 
 WORKDIR /root
