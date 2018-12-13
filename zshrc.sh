@@ -27,13 +27,19 @@ setopt correctall
 autoload -U colors
 colors
 rc="%{$reset_color%}"
-red="%{$fg[red]%}"
-cyan="%{$fg[cyan]%}"
-yellow="%{$fg[yellow]%}"
-green="%{$fg[green]%}"
-blue="%{$fg[blue]%}"
-purple="%{$fg[purple]%}"
-PROMPT="${blue}%n@%m${rc}:${green}%~${rc}%(!.${red}#${rc}.${rc}$) "
+red="%{[38;5;1m%}"
+green="%{[38;5;2m%}"
+yellow="%{[38;5;3m%}"
+blue="%{[38;5;4m%}"
+purple="%{[38;5;5m%}"
+cyan="%{[38;5;6m%}"
+grey="%{[38;5;8m%}"
+pink="%{[38;5;128m%}"
+orange="%{[38;5;166m%}"
+sky="%{[38;5;45m%}"
+white="%{[38;5;15m%}"
+PROMPT="${pink}%n@%m${rc}:${purple}%~${rc}%(!.${red}#${rc}.${rc}$) "
+
 RPROMPT="${yellow}[%t]${rc} [%l]"
 
 # aliases
