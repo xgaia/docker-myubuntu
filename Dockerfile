@@ -1,4 +1,4 @@
-from ubuntu:16.04
+from ubuntu:18.04
 MAINTAINER Xavier Garnier 'xavier.garnier@irisa.fr'
 
 # Copy dotfiles and startup script
